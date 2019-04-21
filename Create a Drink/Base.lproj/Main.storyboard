@@ -178,11 +178,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.97067338197969544" green="0.79701527383075599" blue="0.82440209005311305" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="qeU-yb-scx">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="barTintColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                            <connections>
+                                <outlet property="delegate" destination="kTY-yx-wnB" id="I2d-fa-vxQ"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="1FI-YD-0zP">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" id="ZUR-XE-8CQ">
+                                <rect key="frame" x="0.0" y="84" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1FI-YD-0zP" id="RrI-2g-mhI">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZUR-XE-8CQ" id="FgX-Vb-yQS">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -190,16 +206,17 @@
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="kTY-yx-wnB" id="leB-qO-FQu"/>
-                            <outlet property="delegate" destination="kTY-yx-wnB" id="2Yl-X2-wGd"/>
+                            <outlet property="delegate" destination="kTY-yx-wnB" id="3hz-S9-DXO"/>
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="m6E-H6-xW9"/>
+                        <outlet property="searchBar" destination="qeU-yb-scx" id="MVh-7n-DIA"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="backToDrink" id="m6E-H6-xW9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKC-oK-ANN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1158" y="33"/>
+            <point key="canvasLocation" x="1326" y="-192"/>
         </scene>
     </scenes>
     <resources>
