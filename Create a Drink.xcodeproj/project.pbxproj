@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450AD40522712701001646D5 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450AD40422712701001646D5 /* ViewController2.swift */; };
+		450AD40722712739001646D5 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450AD40622712739001646D5 /* TableCell.swift */; };
 		4534D8B9226A914F008B1C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534D8B8226A914F008B1C90 /* AppDelegate.swift */; };
 		4534D8BB226A914F008B1C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534D8BA226A914F008B1C90 /* ViewController.swift */; };
 		4534D8BE226A914F008B1C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534D8BC226A914F008B1C90 /* Main.storyboard */; };
@@ -15,10 +17,11 @@
 		4534D8C6226A9150008B1C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534D8C4226A9150008B1C90 /* LaunchScreen.storyboard */; };
 		4562A654226B6DA400ECA386 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4562A653226B6DA400ECA386 /* TableViewController.swift */; };
 		4562A657226B6E2400ECA386 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4562A655226B6E2400ECA386 /* TableViewCell1.swift */; };
-		4562A658226B6E2400ECA386 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4562A656226B6E2400ECA386 /* TableViewCell1.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450AD40422712701001646D5 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		450AD40622712739001646D5 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		4534D8B5226A914F008B1C90 /* Create a Drink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Create a Drink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4534D8B8226A914F008B1C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4534D8BA226A914F008B1C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +32,6 @@
 		4534D8C7226A9150008B1C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4562A653226B6DA400ECA386 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		4562A655226B6E2400ECA386 /* TableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
-		4562A656226B6E2400ECA386 /* TableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,8 @@
 				4534D8BF226A914F008B1C90 /* Create_a_Drink.xcdatamodeld */,
 				4562A653226B6DA400ECA386 /* TableViewController.swift */,
 				4562A655226B6E2400ECA386 /* TableViewCell1.swift */,
-				4562A656226B6E2400ECA386 /* TableViewCell1.xib */,
+				450AD40422712701001646D5 /* ViewController2.swift */,
+				450AD40622712739001646D5 /* TableCell.swift */,
 			);
 			path = "Create a Drink";
 			sourceTree = "<group>";
@@ -137,7 +140,6 @@
 				4534D8C6226A9150008B1C90 /* LaunchScreen.storyboard in Resources */,
 				4534D8C3226A9150008B1C90 /* Assets.xcassets in Resources */,
 				4534D8BE226A914F008B1C90 /* Main.storyboard in Resources */,
-				4562A658226B6E2400ECA386 /* TableViewCell1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +153,10 @@
 				4562A657226B6E2400ECA386 /* TableViewCell1.swift in Sources */,
 				4534D8C1226A914F008B1C90 /* Create_a_Drink.xcdatamodeld in Sources */,
 				4534D8BB226A914F008B1C90 /* ViewController.swift in Sources */,
+				450AD40722712739001646D5 /* TableCell.swift in Sources */,
 				4534D8B9226A914F008B1C90 /* AppDelegate.swift in Sources */,
 				4562A654226B6DA400ECA386 /* TableViewController.swift in Sources */,
+				450AD40522712701001646D5 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
