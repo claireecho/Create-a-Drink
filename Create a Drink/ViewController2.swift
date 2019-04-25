@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController2: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
+    let topIndex = IndexPath(row: 0, section: 0)
     
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var table: UITableView!
@@ -75,6 +76,9 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
             
         })
         table.reloadData()
+        table.scrollToRow(at: topIndex, at: .top, animated: false)
+//        table.scroll(to: .top, animated: true) ------> Used for the other method for scrolling to the top
+
     }
     
 }
@@ -92,3 +96,38 @@ class Ingredients {
     }
     
 }
+
+/* Another method for scrolling to top
+extension UITableView {
+    public func reloadData(_ completion: @escaping ()->()) {
+        UIView.animate(withDuration: 0, animations: {
+            self.reloadData()
+        }, completion:{ _ in
+            completion()
+        })
+    }
+
+    func scroll(to: scrollsTo, animated: Bool) {
+        let numberOfSections = self.numberOfSections
+        let numberOfRows = self.numberOfRows(inSection: numberOfSections-1)
+        switch to{
+        case .top:
+            if numberOfRows > 0 {
+                let indexPath = IndexPath(row: 0, section: 0)
+                self.scrollToRow(at: indexPath, at: .top, animated: animated)
+            }
+            break
+        case .bottom:
+            if numberOfRows > 0 {
+                let indexPath = IndexPath(row: numberOfRows-1, section: (numberOfSections-1))
+                self.scrollToRow(at: indexPath, at: .bottom, animated: animated)
+            }
+            break
+        }
+    }
+
+    enum scrollsTo {
+        case top,bottom
+    }
+}
+*/
