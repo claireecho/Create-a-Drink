@@ -170,53 +170,6 @@
             </objects>
             <point key="canvasLocation" x="40.579710144927539" y="26.90217391304348"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="rp5-j5-PnI">
-            <objects>
-                <tableViewController id="kTY-yx-wnB" customClass="TableViewController" customModule="Create_a_Drink" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qrs-lL-7cw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.97067338197969544" green="0.79701527383075599" blue="0.82440209005311305" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="qeU-yb-scx">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="barTintColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
-                            <scopeButtonTitles>
-                                <string>Title</string>
-                                <string>Title</string>
-                            </scopeButtonTitles>
-                            <connections>
-                                <outlet property="delegate" destination="kTY-yx-wnB" id="I2d-fa-vxQ"/>
-                            </connections>
-                        </searchBar>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" id="ZUR-XE-8CQ">
-                                <rect key="frame" x="0.0" y="84" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZUR-XE-8CQ" id="FgX-Vb-yQS">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="kTY-yx-wnB" id="leB-qO-FQu"/>
-                            <outlet property="delegate" destination="kTY-yx-wnB" id="3hz-S9-DXO"/>
-                        </connections>
-                    </tableView>
-                    <connections>
-                        <outlet property="searchBar" destination="qeU-yb-scx" id="MVh-7n-DIA"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TKC-oK-ANN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1326" y="-192"/>
-        </scene>
         <!--View Controller2-->
         <scene sceneID="SSx-hL-57M">
             <objects>
@@ -226,24 +179,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2PY-1y-7Me">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <color key="backgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="ubH-z6-osc">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="osg-qp-P81" id="kxe-ZM-wNB"/>
-                                    </connections>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="108" id="Ds3-zy-5IL" customClass="TableCell" customModule="Create_a_Drink" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="108"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ds3-zy-5IL" id="Hvv-cD-gtc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
@@ -284,7 +226,7 @@
                                         <color key="backgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="imgView" destination="p1r-oJ-3dr" id="sgd-px-JEX"/>
+                                            <outlet property="imgView" destination="p1r-oJ-3dr" id="5yU-O7-eBv"/>
                                             <outlet property="nameLbl" destination="7m0-1G-QFE" id="CEU-5r-ndu"/>
                                         </connections>
                                     </tableViewCell>
@@ -294,25 +236,38 @@
                                     <outlet property="delegate" destination="osg-qp-P81" id="zbu-2Q-M0C"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="ubH-z6-osc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="osg-qp-P81" id="kxe-ZM-wNB"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RTW-bE-LhG" firstAttribute="trailing" secondItem="2PY-1y-7Me" secondAttribute="trailing" id="1Co-cp-fqM"/>
-                            <constraint firstItem="2PY-1y-7Me" firstAttribute="leading" secondItem="RTW-bE-LhG" secondAttribute="leading" id="DT5-ny-muV"/>
-                            <constraint firstItem="RTW-bE-LhG" firstAttribute="bottom" secondItem="2PY-1y-7Me" secondAttribute="bottom" id="DtO-5g-QVt"/>
-                            <constraint firstItem="2PY-1y-7Me" firstAttribute="top" secondItem="RTW-bE-LhG" secondAttribute="top" id="cUd-Q5-yyk"/>
+                            <constraint firstItem="2PY-1y-7Me" firstAttribute="bottom" secondItem="RTW-bE-LhG" secondAttribute="bottom" id="7nb-cu-71L"/>
+                            <constraint firstItem="ubH-z6-osc" firstAttribute="top" secondItem="RTW-bE-LhG" secondAttribute="top" id="IwF-e2-01m"/>
+                            <constraint firstItem="ubH-z6-osc" firstAttribute="trailing" secondItem="RTW-bE-LhG" secondAttribute="trailing" id="MiQ-AJ-xWu"/>
+                            <constraint firstItem="2PY-1y-7Me" firstAttribute="top" secondItem="ubH-z6-osc" secondAttribute="bottom" id="RoA-Do-rqh"/>
+                            <constraint firstItem="2PY-1y-7Me" firstAttribute="trailing" secondItem="RTW-bE-LhG" secondAttribute="trailing" id="XNC-mn-TmC"/>
+                            <constraint firstItem="ubH-z6-osc" firstAttribute="leading" secondItem="RTW-bE-LhG" secondAttribute="leading" id="hzg-fV-jff"/>
+                            <constraint firstItem="2PY-1y-7Me" firstAttribute="top" secondItem="ubH-z6-osc" secondAttribute="bottom" id="nxU-SR-sgT"/>
+                            <constraint firstItem="2PY-1y-7Me" firstAttribute="leading" secondItem="RTW-bE-LhG" secondAttribute="leading" id="x0d-QX-3lQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RTW-bE-LhG"/>
                     </view>
                     <connections>
-                        <outlet property="imgView" destination="p1r-oJ-3dr" id="Vhv-gx-i9m"/>
                         <outlet property="searchBar" destination="ubH-z6-osc" id="Hg0-Zd-f7i"/>
                         <outlet property="table" destination="2PY-1y-7Me" id="gwh-2c-KbD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2O-Aw-uU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150.7246376811595" y="684.78260869565224"/>
+            <point key="canvasLocation" x="1028.985507246377" y="26.785714285714285"/>
         </scene>
     </scenes>
     <resources>

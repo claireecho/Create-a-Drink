@@ -15,8 +15,6 @@
 		4534D8C1226A914F008B1C90 /* Create_a_Drink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4534D8BF226A914F008B1C90 /* Create_a_Drink.xcdatamodeld */; };
 		4534D8C3226A9150008B1C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4534D8C2226A9150008B1C90 /* Assets.xcassets */; };
 		4534D8C6226A9150008B1C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534D8C4226A9150008B1C90 /* LaunchScreen.storyboard */; };
-		4562A654226B6DA400ECA386 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4562A653226B6DA400ECA386 /* TableViewController.swift */; };
-		4562A657226B6E2400ECA386 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4562A655226B6E2400ECA386 /* TableViewCell1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +28,6 @@
 		4534D8C2226A9150008B1C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4534D8C5226A9150008B1C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4534D8C7226A9150008B1C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4562A653226B6DA400ECA386 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		4562A655226B6E2400ECA386 /* TableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +67,6 @@
 				4534D8C4226A9150008B1C90 /* LaunchScreen.storyboard */,
 				4534D8C7226A9150008B1C90 /* Info.plist */,
 				4534D8BF226A914F008B1C90 /* Create_a_Drink.xcdatamodeld */,
-				4562A653226B6DA400ECA386 /* TableViewController.swift */,
-				4562A655226B6E2400ECA386 /* TableViewCell1.swift */,
 				450AD40422712701001646D5 /* ViewController2.swift */,
 				450AD40622712739001646D5 /* TableCell.swift */,
 			);
@@ -150,12 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4562A657226B6E2400ECA386 /* TableViewCell1.swift in Sources */,
 				4534D8C1226A914F008B1C90 /* Create_a_Drink.xcdatamodeld in Sources */,
 				4534D8BB226A914F008B1C90 /* ViewController.swift in Sources */,
 				450AD40722712739001646D5 /* TableCell.swift in Sources */,
 				4534D8B9226A914F008B1C90 /* AppDelegate.swift in Sources */,
-				4562A654226B6DA400ECA386 /* TableViewController.swift in Sources */,
 				450AD40522712701001646D5 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

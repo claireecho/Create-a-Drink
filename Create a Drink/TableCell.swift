@@ -10,8 +10,8 @@ import UIKit
 
 class TableCell: UITableViewCell {
     
-    @IBOutlet var imgView: UIButton!
     @IBOutlet var nameLbl: UILabel!
+    @IBOutlet var imgView: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
