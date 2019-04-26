@@ -24,6 +24,7 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
         setUpSearchBar()
         alterLayout()
         searchBar.backgroundImage = UIImage()
+        
 
     }
     
@@ -97,7 +98,7 @@ class Ingredients {
     
 }
 
-/* Another method for scrolling to top
+/* ---- Another method for scrolling to top ----
 extension UITableView {
     public func reloadData(_ completion: @escaping ()->()) {
         UIView.animate(withDuration: 0, animations: {
