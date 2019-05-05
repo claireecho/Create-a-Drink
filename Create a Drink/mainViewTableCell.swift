@@ -10,6 +10,9 @@ import UIKit
 
 class mainViewTableCell: UITableViewCell {
 
+    @IBOutlet var nameLbl: UILabel!
+    @IBOutlet var descriptionLbl: UILabel!
+    @IBOutlet var imgView: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

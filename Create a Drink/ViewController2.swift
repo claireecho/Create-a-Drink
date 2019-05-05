@@ -45,6 +45,8 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
     
     private func setUpSearchBar() {
         searchBar.delegate = self
+        
+
     }
     
     func alterLayout() {
@@ -77,10 +79,18 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
             
         })
         table.reloadData()
-        table.scrollToRow(at: topIndex, at: .top, animated: false)
+        if currentIngredientArray.count >= 1 {
+            table.scrollToRow(at: topIndex, at: .top, animated: false)
+        }
 //        table.scroll(to: .top, animated: true) ------> Used for the other method for scrolling to the top
 
     }
+    
+    func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.searchBar.endEditing(true)
+    }
+    
+
     
 }
 

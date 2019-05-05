@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="VT323-Regular.ttf">
+            <string>VT323-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="GzX-2I-5p6">
             <objects>
-                <viewController id="RAa-NW-lou" sceneMemberID="viewController">
+                <viewController id="RAa-NW-lou" customClass="mainViewController" customModule="Create_a_Drink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6A2-eR-aTX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +37,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="108" id="9cf-3v-1K5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="108" id="9cf-3v-1K5" customClass="mainViewTableCell" customModule="Create_a_Drink" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9cf-3v-1K5" id="SF0-j0-nsk">
@@ -74,6 +79,11 @@
                                                 <constraint firstItem="kad-CI-aPf" firstAttribute="leading" secondItem="USD-I4-6rL" secondAttribute="trailing" id="zlw-gv-E3g"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLbl" destination="kad-CI-aPf" id="TM8-v7-kIA"/>
+                                            <outlet property="imgView" destination="USD-I4-6rL" id="85A-KT-DLE"/>
+                                            <outlet property="nameLbl" destination="suX-rZ-UV3" id="VOq-JJ-gQQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -270,9 +280,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2PY-1y-7Me">
                                 <rect key="frame" x="0.0" y="76" width="414" height="660"/>
-                                <color key="backgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.45359360580000002" green="0.50206740709999997" blue="0.76475253809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="sectionIndexBackgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.45359360580000002" green="0.50206740709999997" blue="0.76475253809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="108" id="Ds3-zy-5IL" customClass="TableCell" customModule="Create_a_Drink" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="108"/>
@@ -289,17 +299,17 @@
                                                     </constraints>
                                                     <state key="normal" image="apple"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m0-1G-QFE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m0-1G-QFE">
                                                     <rect key="frame" x="108" y="0.0" width="306" height="108"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="7m0-1G-QFE" secondAttribute="height" multiplier="17:6" id="O1P-dK-rMG"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" name="VT323-Regular" family="VT323" pointSize="64"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.45359360581841929" green="0.50206740706767317" blue="0.76475253807106602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="7m0-1G-QFE" firstAttribute="top" secondItem="Hvv-cD-gtc" secondAttribute="top" id="6LH-zZ-lRy"/>
@@ -313,7 +323,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="7m0-1G-QFE" secondAttribute="bottom" id="xK8-Pd-nNg"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.97067338199999997" green="0.79701527380000003" blue="0.82440209009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.45359360580000002" green="0.50206740709999997" blue="0.76475253809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="imgView" destination="p1r-oJ-3dr" id="5yU-O7-eBv"/>
@@ -337,7 +347,7 @@
                                 </connections>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2PY-1y-7Me" firstAttribute="bottom" secondItem="RTW-bE-LhG" secondAttribute="bottom" id="7nb-cu-71L"/>
                             <constraint firstItem="ubH-z6-osc" firstAttribute="top" secondItem="RTW-bE-LhG" secondAttribute="top" id="IwF-e2-01m"/>
@@ -361,7 +371,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="apple" width="108" height="108"/>
+        <image name="apple" width="288" height="288"/>
         <image name="cup" width="376" height="696"/>
         <image name="searchButton" width="130" height="130"/>
     </resources>

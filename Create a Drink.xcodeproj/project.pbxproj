@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4500FCE8227F1D7E000C7943 /* VT323-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4500FCE7227F1D72000C7943 /* VT323-Regular.ttf */; };
 		450AD40522712701001646D5 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450AD40422712701001646D5 /* ViewController2.swift */; };
 		450AD40722712739001646D5 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450AD40622712739001646D5 /* TableCell.swift */; };
+		450D47D9227534E200E84C66 /* pixelFJ8pt1__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 450D47D52275102600E84C66 /* pixelFJ8pt1__.TTF */; };
 		4534D8B9226A914F008B1C90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534D8B8226A914F008B1C90 /* AppDelegate.swift */; };
 		4534D8BB226A914F008B1C90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534D8BA226A914F008B1C90 /* ViewController.swift */; };
 		4534D8BE226A914F008B1C90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534D8BC226A914F008B1C90 /* Main.storyboard */; };
 		4534D8C1226A914F008B1C90 /* Create_a_Drink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4534D8BF226A914F008B1C90 /* Create_a_Drink.xcdatamodeld */; };
 		4534D8C3226A9150008B1C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4534D8C2226A9150008B1C90 /* Assets.xcassets */; };
 		4534D8C6226A9150008B1C90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534D8C4226A9150008B1C90 /* LaunchScreen.storyboard */; };
+		457CB1F422728A9400F86D69 /* mainViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457CB1F322728A9400F86D69 /* mainViewTableCell.swift */; };
+		457CB1F622728AAF00F86D69 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457CB1F522728AAF00F86D69 /* mainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4500FCE7227F1D72000C7943 /* VT323-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VT323-Regular.ttf"; sourceTree = "<group>"; };
 		450AD40422712701001646D5 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		450AD40622712739001646D5 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		450D47D52275102600E84C66 /* pixelFJ8pt1__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixelFJ8pt1__.TTF; sourceTree = "<group>"; };
 		4534D8B5226A914F008B1C90 /* Create a Drink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Create a Drink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4534D8B8226A914F008B1C90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4534D8BA226A914F008B1C90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		4534D8C2226A9150008B1C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4534D8C5226A9150008B1C90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4534D8C7226A9150008B1C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		457CB1F322728A9400F86D69 /* mainViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewTableCell.swift; sourceTree = "<group>"; };
+		457CB1F522728AAF00F86D69 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				4534D8BF226A914F008B1C90 /* Create_a_Drink.xcdatamodeld */,
 				450AD40422712701001646D5 /* ViewController2.swift */,
 				450AD40622712739001646D5 /* TableCell.swift */,
+				457CB1F322728A9400F86D69 /* mainViewTableCell.swift */,
+				457CB1F522728AAF00F86D69 /* mainViewController.swift */,
+				450D47D52275102600E84C66 /* pixelFJ8pt1__.TTF */,
+				4500FCE7227F1D72000C7943 /* VT323-Regular.ttf */,
 			);
 			path = "Create a Drink";
 			sourceTree = "<group>";
@@ -105,6 +117,7 @@
 				TargetAttributes = {
 					4534D8B4226A914F008B1C90 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -131,8 +144,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4500FCE8227F1D7E000C7943 /* VT323-Regular.ttf in Resources */,
 				4534D8C6226A9150008B1C90 /* LaunchScreen.storyboard in Resources */,
 				4534D8C3226A9150008B1C90 /* Assets.xcassets in Resources */,
+				450D47D9227534E200E84C66 /* pixelFJ8pt1__.TTF in Resources */,
 				4534D8BE226A914F008B1C90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +161,8 @@
 			files = (
 				4534D8C1226A914F008B1C90 /* Create_a_Drink.xcdatamodeld in Sources */,
 				4534D8BB226A914F008B1C90 /* ViewController.swift in Sources */,
+				457CB1F622728AAF00F86D69 /* mainViewController.swift in Sources */,
+				457CB1F422728A9400F86D69 /* mainViewTableCell.swift in Sources */,
 				450AD40722712739001646D5 /* TableCell.swift in Sources */,
 				4534D8B9226A914F008B1C90 /* AppDelegate.swift in Sources */,
 				450AD40522712701001646D5 /* ViewController2.swift in Sources */,
@@ -303,7 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ClaireCho.Create-a-Drink";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -321,7 +338,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ClaireCho.Create-a-Drink";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
